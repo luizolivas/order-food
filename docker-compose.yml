@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./order-food-front
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    volumes:
+      - ./order-food-front:/app
+
+  backend:
+    build:
+      context: ./order-food-backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    depends_on:
+      - db
+    networks:
+      - app-network
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=OrdersDB;Username=user;Password=password;
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: OrdersDB
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d
+
+networks:
+  app-network:
+    driver: bridge

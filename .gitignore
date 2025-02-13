@@ -5,10 +5,8 @@ yarn-error.log
 .pnpm-debug.log
 *.tgz
 
-# Docker
+# Docker 
 **/.dockerignore
-**/Dockerfile
-**/docker-compose.yml
 **/docker-compose.override.yml
 **/docker-compose.*.yml
 **/.docker/
