@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0tpJb9BTerVfR7Oms+XjCtW/WTR2+wmZVNRFSQYfxPI=",
+  "Source": "order-food-backend",
+  "BasePath": "_content/order-food-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

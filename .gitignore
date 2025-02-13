@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+*.tgz
+
+# Docker
+**/.dockerignore
+**/Dockerfile
+**/docker-compose.yml
+**/docker-compose.override.yml
+**/docker-compose.*.yml
+**/.docker/
+
+# Build outputs
+/dist
+/build
+/out
+/.next
+/public
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# MacOS
+.DS_Store
+
+# Linux
+*~
