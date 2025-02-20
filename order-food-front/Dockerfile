@@ -1,11 +1,7 @@
-FROM node:20.15.1-alpine
+FROM node:alpine
 
-WORKDIR /usr/src/app
-
-# Copia apenas package.json e package-lock.json primeiro (para otimizar cache)
-COPY package*.json ./
-
-# Instala as dependências antes de copiar o restante dos arquivos
+WORKDIR /usr/app
+COPY ./ /usr/app
 RUN npm install
 
 # Agora copia todo o código para dentro do contêiner
