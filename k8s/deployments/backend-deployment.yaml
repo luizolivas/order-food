@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: SEU_USUARIO/order-food-backend:latest  # Alterado para pegar do Docker Hub
+          imagePullPolicy: Always  # Garante que o Kubernetes sempre puxe a versão mais recente
+          ports:
+            - containerPort: 5000
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              value: "Host=db;Port=5432;Database=OrdersDB;Username=slift;Password=lift"

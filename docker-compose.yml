@@ -16,7 +16,7 @@ services:
 
   backend:
     build:
-      context: ./order-food-backend
+      context: ./order-food-backend/order-food-backend
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
