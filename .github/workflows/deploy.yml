@@ -1,0 +1,33 @@
+name: Deploy to Docker Hub and Minikube
+
+on:
+  push:
+    branches:
+      - main  # Executa quando houver um push na branch main
+  workflow_dispatch: # Permite rodar manualmente pelo GitHub Actions
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚀 Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: 🔑 Login no Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: 🏗️ Construir imagem do Backend
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest -f order-food-backend/Dockerfile .
+
+      - name: 🏗️ Construir imagem do Frontend
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest -f order-food-front/Dockerfile .
+
+      - name: 📤 Enviar Backend para o Docker Hub
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest
+
+      - name: 📤 Enviar Frontend para o Docker Hub
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest
+
