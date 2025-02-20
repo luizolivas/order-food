@@ -3,8 +3,8 @@ name: Deploy to Docker Hub and Minikube
 on:
   push:
     branches:
-      - main
-  workflow_dispatch: 
+      - main  # Executa quando houver um push na branch main
+  workflow_dispatch: # Permite rodar manualmente pelo GitHub Actions
 
 jobs:
   build-and-deploy:
@@ -19,14 +19,15 @@ jobs:
 
       - name: 🏗️ Construir imagem do Backend
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest -f order-food-backend/Dockerfile order-food-backend/
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest -f order-food-backend/order-food-backend/Dockerfile .
 
       - name: 🏗️ Construir imagem do Frontend
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-front/Dockerfile order-food-front/
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest -f order-food-front/Dockerfile .
 
       - name: 📤 Enviar Backend para o Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest
 
       - name: 📤 Enviar Frontend para o Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest
+
