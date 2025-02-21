@@ -19,11 +19,11 @@ jobs:
 
       - name: 🏗️ Construir imagem do Backend
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest -f order-food-front/Dockerfile order-food-front
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest -f order-food-backend/Dockerfile .
 
       - name: 🏗️ Construir imagem do Frontend
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest -f order-food-front/Dockerfile .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/order-food-frontend:latest -f order-food-front/Dockerfile order-food-front
 
       - name: 📤 Enviar Backend para o Docker Hub
         run: docker push ${{ secrets.DOCKER_USERNAME }}/order-food-backend:latest
