@@ -1,7 +1,10 @@
 FROM node:alpine
 
 WORKDIR /usr/app
-COPY ./ /usr/app
+
+# Copia apenas os arquivos necessários para instalar dependências
+COPY package*.json ./
+
 RUN npm install
 
 # Agora copia todo o código para dentro do contêiner
