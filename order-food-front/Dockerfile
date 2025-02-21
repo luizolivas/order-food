@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-# Copia apenas os arquivos necessários para instalar dependências
+# Copia apenas os arquivos necessários para instalar dependênciass
 COPY package*.json ./
 
 RUN npm install
