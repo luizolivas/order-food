@@ -1,6 +1,8 @@
 FROM node:alpine
 
-WORKDIR /usr/app
+WORKDIR /usr/src/app/
+
+
 
 # Copia apenas os arquivos necessários para instalar dependênciass
 COPY package*.json ./
