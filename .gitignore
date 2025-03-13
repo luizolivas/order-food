@@ -41,3 +41,7 @@ logs/
 # MacOS e Linux
 .DS_Store
 *~
+
+
+# PostgreeSQL
+db/data/

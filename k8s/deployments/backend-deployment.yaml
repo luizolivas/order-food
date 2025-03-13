@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: luiz123548/order-food-backend:latest  # Alterado para pegar do Docker Hub
+          image: orderfoodcluster.azurecr.io/backend-image:latest # Alterado para pegar do Docker Hub
           imagePullPolicy: Always  # Garante que o Kubernetes sempre puxe a versão mais recente
           ports:
             - containerPort: 5000

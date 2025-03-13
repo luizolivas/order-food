@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}|OrderFoodLibrary\\OrderFoodLibrary.csproj|c:\\users\\luizo\\onedrive\\documentos\\projetos\\order-food\\order-food-backend\\orderfoodlibrary\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}|OrderFoodLibrary\\OrderFoodLibrary.csproj|solutionrelative:orderfoodlibrary\\entities\\dish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}|OrderFoodLibrary\\OrderFoodLibrary.csproj|c:\\users\\luizo\\onedrive\\documentos\\projetos\\order-food\\order-food-backend\\orderfoodlibrary\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}|OrderFoodLibrary\\OrderFoodLibrary.csproj|solutionrelative:orderfoodlibrary\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}|OrderFoodLibrary\\OrderFoodLibrary.csproj|c:\\users\\luizo\\onedrive\\documentos\\projetos\\order-food\\order-food-backend\\orderfoodlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}|OrderFoodLibrary\\OrderFoodLibrary.csproj|solutionrelative:orderfoodlibrary\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{156FC1CB-4422-44C8-8CD5-FD64D40DD420}|order-food-backend\\order-food-backend.csproj|c:\\users\\luizo\\onedrive\\documentos\\projetos\\order-food\\order-food-backend\\order-food-backend\\order-food-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{156FC1CB-4422-44C8-8CD5-FD64D40DD420}|order-food-backend\\order-food-backend.csproj|solutionrelative:order-food-backend\\order-food-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +51,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:323948898:0:{81164725-9a96-4ece-a4cb-440d8fd285e5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\OrderFoodLibrary\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "OrderFoodLibrary\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\OrderFoodLibrary\\Entities\\Category.cs",
+              "RelativeToolTip": "OrderFoodLibrary\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:14:46.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dish.cs",
+              "DocumentMoniker": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\OrderFoodLibrary\\Entities\\Dish.cs",
+              "RelativeDocumentMoniker": "OrderFoodLibrary\\Entities\\Dish.cs",
+              "ToolTip": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\OrderFoodLibrary\\Entities\\Dish.cs",
+              "RelativeToolTip": "OrderFoodLibrary\\Entities\\Dish.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:14:41.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\OrderFoodLibrary\\Class1.cs",
+              "RelativeDocumentMoniker": "OrderFoodLibrary\\Class1.cs",
+              "ToolTip": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\OrderFoodLibrary\\Class1.cs",
+              "RelativeToolTip": "OrderFoodLibrary\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T00:14:13.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "order-food-backend.csproj",
+              "DocumentMoniker": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\order-food-backend\\order-food-backend.csproj",
+              "RelativeDocumentMoniker": "order-food-backend\\order-food-backend.csproj",
+              "ToolTip": "C:\\Users\\luizo\\OneDrive\\Documentos\\projetos\\order-food\\order-food-backend\\order-food-backend\\order-food-backend.csproj",
+              "RelativeToolTip": "order-food-backend\\order-food-backend.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T13:32:43.701Z",
+              "EditorCaption": ""
             }
           ]
         },

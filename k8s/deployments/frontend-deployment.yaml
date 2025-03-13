@@ -14,5 +14,5 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: luiz123548/frontend-image:latest
+          image: orderfoodcluster.azurecr.io/frontend-image:latest
           imagePullPolicy: Always
