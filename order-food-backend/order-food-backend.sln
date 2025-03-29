@@ -4,10 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "order-food-backend", "order-food-backend\order-food-backend.csproj", "{156FC1CB-4422-44C8-8CD5-FD64D40DD420}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244} = {F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderFoodLibrary", "OrderFoodLibrary\OrderFoodLibrary.csproj", "{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderFoodLibrary", "OrderFoodLibrary\OrderFoodLibrary.csproj", "{F9859F3B-9D75-48DD-9ACE-C10A2AFF2244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "order-food-tests", "order-food-tests\order-food-tests.csproj", "{8148A717-9C56-48C8-907F-0D84D4D255E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "order-food-tests", "order-food-tests\order-food-tests.csproj", "{8148A717-9C56-48C8-907F-0D84D4D255E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
