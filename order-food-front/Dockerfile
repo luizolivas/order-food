@@ -15,4 +15,4 @@ COPY . .
 # Instala o Angular CLI globalmente
 RUN npm install -g @angular/cli
 
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["ng", "serve", "--host", "0.0.0.0", "--port", "80"]

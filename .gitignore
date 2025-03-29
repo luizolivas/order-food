@@ -17,6 +17,10 @@ obj/
 .vs/
 appsettings.json  
 
+# Ignorar migrations e context
+order-food-backend/order-food-backend/Context/
+order-food-backend/order-food-backend/Migrations/
+
 # Docker
 .dockerignore
 .docker/
@@ -41,3 +45,7 @@ logs/
 # MacOS e Linux
 .DS_Store
 *~
+
+
+# PostgreeSQL
+db/data/
