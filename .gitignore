@@ -49,3 +49,4 @@ logs/
 
 # PostgreeSQL
 db/data/
+/order-food-backend/order-food-backend/appsettings.Development.json
