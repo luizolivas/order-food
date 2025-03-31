@@ -22,10 +22,11 @@ namespace order_food_tests.Application.Services.DishServices {
         [Fact]
         public async Task GetDishes_ShouldReturnDishes() {
 
+            var cat = new Category { Id = 1, Name = "Almoço" };
             var dishes = new List<Dish> {
 
-                new Dish { Id = 1, Name= "Bebidas" },
-                new Dish { Id = 2, Name = "Pizza" }
+               new Dish { Id = 1, Name = "Arroz", Avaliable = true, Category = cat, Price = 10, Description = "Teste" },
+               new Dish { Id = 2, Name = "Feijão", Avaliable = true, Category = cat, Price = 10, Description = "Teste1" }
             };
             _dishRepositoryMock.Setup(repo => repo.GetAllDishesAsync()).ReturnsAsync(dishes);
 
@@ -33,13 +34,14 @@ namespace order_food_tests.Application.Services.DishServices {
 
             Assert.NotNull(result);
             Assert.Equal(2, result.Count());
-            Assert.Equal("Bebidas", result.First().Name);
+            Assert.Equal("Arroz", result.First().Name);
         }
 
         [Fact]
         public async Task GetDishById_ShouldReturnDishByID() {
 
-            Dish dish = new Dish { Id = 1, Name = "Bebidas" };
+            var cat = new Category { Id = 1, Name = "Almoço" };
+            Dish dish = new Dish { Id = 1, Name = "Arroz", Avaliable = true, Category = cat, Price = 10, Description = "Teste" };
 
             _dishRepositoryMock.Setup(repo => repo.GetDishByIdAsync(1)).ReturnsAsync(dish);
 
@@ -47,12 +49,13 @@ namespace order_food_tests.Application.Services.DishServices {
 
             Assert.NotNull(result);
             Assert.Equal(1, result.Id);
-            Assert.Equal("Bebidas", result.Name);
+            Assert.Equal("Arroz", result.Name);
         }
 
         [Fact]
         public async Task AddDish_ShouldCallRepository() {
-            Dish dish = new Dish { Id = 1, Name = "Pizza" };
+            var cat = new Category { Id = 1, Name = "Almoço" };
+            Dish dish = new Dish { Id = 1, Name = "Arroz", Avaliable=true, Category = cat, Price= 10, Description="Teste"  };
 
             await _dishService.AddDish(dish);
 
@@ -62,7 +65,8 @@ namespace order_food_tests.Application.Services.DishServices {
 
         [Fact]
         public async Task UpdateDish_ShouldCallRepository() {
-            var dish = new Dish { Id = 1, Name = "Bebidas" };
+            var cat = new Category { Id = 1, Name = "Almoço" };
+            Dish dish = new Dish { Id = 1, Name = "Arroz", Avaliable = true, Category = cat, Price = 10, Description = "Teste" };
 
             await _dishService.UpdateDish(dish);
 
