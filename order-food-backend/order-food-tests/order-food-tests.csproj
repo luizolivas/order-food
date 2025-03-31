@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Services\DishServices\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\order-food-backend\order-food-backend.csproj" />
     <ProjectReference Include="..\OrderFoodLibrary\OrderFoodLibrary.csproj" />
   </ItemGroup>
